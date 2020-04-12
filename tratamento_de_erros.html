@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*   mostra o erro no console
+
+            var num;
+        try{
+            document.writi("cfb cursos");
+        }catch(e){
+            document.write("erro: " + e.message);
+            console.log("mensagem de erro  :" + e.message);
+        }
+    */
+
+
+    /* mostra erro infinity devido a não possibilidade da divisão por zero
+    var num;
+        try{ num=10/0
+            document.write("erro: "+num);
+        }catch(e){
+           
+        }
+
+ */
+
+
+/*
+var num;//valor menor que 10 ele imprime, maior que 10 ele informa o erro
+try{ num=prompt("digite um valor");
+            if(num>10){
+            throw new Error("valor invalido,o valor deve ser menor que 10");
+            }
+            document.write("valor: "+num);
+        }catch(e){
+            document.write("erro: " + e.message)   ;    
+
+        }finally{
+            document.write("<br>fim do tratamento");
+        }
+
+
+*/
+
+var num;// aqui mesmo quando digitamos um valor acima de 10,ele retorna 10. O erro aparece no console
+try{ num=prompt("digite um valor");
+            if(num>10){
+            throw new Error("valor invalido,o valor maximo é  10");
+            }
+            
+        }catch(e){
+            console.log("erro: " + e.message);  
+            num=10;  
+
+        }finally{
+            document.write("valor: "+num);
+        }
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

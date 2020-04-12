@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array2</title>
+    <script>
+        var mochila=[];
+        
+        mochila.push("faca");
+        mochila.push("corda");
+        mochila.push("pederneira");
+        mochila.push("chave");
+        mochila.push("lanterna");
+        mochila.unshift("pedra");//coloca como primeiro elemento do array
+
+        mochila.pop();// remove o ultimo elemento do array
+
+        mochila.shift();//remove o primeiro elemento do array
+
+        mochila.splice(2,1);// a partir da linha 2 remover 1 elemento. modificar a segunda coordenada para eliminar mais elementos
+
+        document.write(mochila[0] + "<br>");
+        document.write(mochila[1] + "<br>");
+        document.write(mochila[2] + "<br>");
+        document.write(mochila[3] + "<br>");
+        document.write(mochila[4] + "<br>");
+        document.write(mochila[5] + "<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

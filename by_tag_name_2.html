@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByTagName</title>
+</head>
+<body>
+
+    <h2>cfb cursos</h2>
+    <p>curso de javascript</p>
+    <h2>aula 25</h2>
+    <p>www.youtube.com/cfbcursos</p>
+    <h2>cfbcursos.com.br</h2>
+    
+    <hr/>
+
+
+    <script>
+//muda todas as tags diferentes de cor
+        /*
+  var tagsP=document.getElementsByTagName("*");
+      for(var i=0;i<tagsP.length;i++){
+        tagsP[i].style.color="#f00";
+      }
+
+      */
+
+
+//deixando apenas a tag 8 vermelha
+      var tags=document.getElementsByTagName("*");
+    
+        tags[8].innerHTML="amor"; //muda o conteudo da tg
+        tags[8].style.color="#f00";
+
+
+      
+    
+
+  
+ 
+
+
+    </script>
+    
+</body>
+</html>

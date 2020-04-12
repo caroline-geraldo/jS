@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query selector</title>
+    <style>
+        .titulo{
+            color: #f00;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        div{
+            border:1px solid#000;
+            padding: 10px;
+            display: inline-block;
+        }
+        a{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="titulo">querySelectorAll</h1>
+    <p> O query querySelectorAll é um metodo que retorna os elementos do documento que corresponde a uma classe de css ou a uma tag especifica.</p>
+    <h2 class="titulo">cusro se javaScript</h2>
+    <p>www.google.com.br</p>
+    <p class="titulo">cfb cursos</p>
+    <div>
+        <p>este texto esta dentro de uma div</p>
+        <p>este tambem</p>
+
+       
+        </div>
+        <a href="http//www.youtube.com" target="_blank">canal</a>
+        <a href="http//cfbcursos.com.br">site</a>
+        <hr/>
+
+    <script>
+        var ps=document.querySelectorAll("p");
+        document.write(ps[0].innerHTML);
+
+        // muda o conteudo de um texto
+        ps[0].innerHTML="novo texto";
+
+       /*comando muda acor                           ps[0].style.color="blue"; */
+
+
+    </script>
+</body>
+</html>

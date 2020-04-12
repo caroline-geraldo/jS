@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner html</title>
+
+</head>
+<body>
+
+    <p id="texto">CFB cursos</p>
+    <input type="text" id="cxtexto" value="cfb cursos">    
+    <div id="dv">texto da div</div>
+
+    <script>
+
+        //modificando o valor de uma propriedade com Js
+      document.getElementById("cxtexto").value="curso de javascript";
+      //alert(cxt);
+
+
+
+//a propriedade value nao funciona para o p. não da erro,mas nao vai funcionar. tem que usar o innerhtml
+
+document.getElementById("texto").innerHTML="aula 24 - innerHTML";
+
+//mudando o texto de uma div
+document.getElementById("dv").innerHTML="novo texto da div";
+
+
+
+    </script>
+</body>
+</html>

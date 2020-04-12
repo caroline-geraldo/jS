@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByTagName</title>
+</head>
+<body>
+
+    <p>cfb cursos</p>
+    <p>curso de javascript</p>
+    <p>aula 25</p>
+    <p>www.youtube.com/cfbcursos</p>
+    <p>cfbcursos.com.br</p>
+    
+    <hr/>
+
+
+    <script>
+/*
+     tambem pode ser feito dessa forma
+      var tagsP=document.getElementsByTagName("p")[0];
+
+      document.write(tagsP.innerHTML); 
+      */
+
+
+     
+/*
+      var tagsP=document.getElementsByTagName("p");
+
+      document.write(tagsP[2].innerHTML);
+*/
+      
+      /*
+var tagsP=document.getElementsByTagName("p");
+     
+
+  
+  // (tagsP[2].style.color="#f00");
+
+  */
+
+// deixa todos os elementos vermelhos
+  var tagsP=document.getElementsByTagName("p");
+      for(var i=0;i<tagsP.length;i++){
+        tagsP[i].style.color="#f00";
+      }
+
+  
+ 
+
+
+    </script>
+    
+</body>
+</html>

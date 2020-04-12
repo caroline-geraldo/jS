@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data e hora</title>
+</head>
+<body>
+
+    <script>
+
+        var dt=new Date(); //data muito completa
+        var diasem=dt.getDay(); // dia da semana
+        var dia=dt.getDate(); //chama data
+        var mes=dt.getMonth(); // mes
+        var ano=dt.getUTCFullYear(); // ano
+
+        var horas=dt.getHours();
+        var minutos=dt.getMinutes();
+        var segundos=dt.getSeconds();
+
+        var meses=new Array("janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro");
+        var semanas=new Array("domingo","segunda","terça","quarta","quinta","sexta","sabado");
+
+        document.write();//imprime oque solicitam nos parenteses
+
+        document.write(semanas[diasem] + " , " + dia + " de " + meses[mes] + " de " + ano);
+
+        document.write(" ", horas + " : " + minutos + " : " + segundos);
+
+    </script>
+    
+</body>
+</html>

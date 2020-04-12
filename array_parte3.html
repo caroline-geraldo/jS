@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array 3</title>
+    <script>
+        var mochila=[],pos;
+
+        mochila.push("faca");
+        mochila.push("corda");
+        mochila.push("pederneira");
+        mochila.push("chave");
+        mochila.push("lanterna");
+        mochila.push("pedra");
+        
+        //document.write(mochila.indexOf("lanterna"));//retorna a posição do elemento do array
+
+        pos=mochila.indexOf("arame");//este item aresenta resultado -1.A estrutura abaixo reotna mensagens no lugar de -1
+
+        if(pos < 0){
+            document.write("item não está na mochila <br>")
+        }else{
+            document.write("item está na mochila<br> posição" + pos);
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
